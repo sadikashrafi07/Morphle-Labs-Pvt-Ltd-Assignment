@@ -11,7 +11,7 @@ def htop():
     username = os.getlogin()  
     server_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S IST")  
     
-    # Get the output of the 'top' command
+
     top_output = subprocess.check_output(['top', '-b', '-n', '1']).decode('utf-8')
     
     return f"""
